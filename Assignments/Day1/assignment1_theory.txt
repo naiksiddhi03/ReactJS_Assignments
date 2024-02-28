@@ -1,0 +1,14 @@
+what are keys ?
+-> used to identify which items in list are changed,updated or deleted.
+   special string attribute used while creating list of elements.
+   mosly recommended to use string as key so can be unique identified.
+   array index can be assigned as key but problem with it is if array elements get disordered then key for elements will also change.
+   If explicit keys are not assigned, React defaults to using indexes as keys.
+   Keys should be unique among siblings.
+   const numbers = [1, 2, 3, 4, 5]; 
+   let listItems = numbers.map((item,index) => 
+   {
+        return <li 
+	    key={index}> {item} 
+        </li>
+    });
